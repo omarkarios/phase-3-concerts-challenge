@@ -116,7 +116,7 @@ class Venue:
             self._city = value
 
     def concerts(self):
-        # Filter Concert.all for this venue's instances
+       
         results = [c for c in Concert.all if c.venue == self]
         return results if results else None
 
